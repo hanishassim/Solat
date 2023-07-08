@@ -66,11 +66,11 @@ struct ContentView: View {
             RadialGradient(gradient: Gradient(colors: [.pink, .purple, .white]), center: .topTrailing, startRadius: 0, endRadius: 300)
                 .ignoresSafeArea()
             
-            
             RadialGradient(gradient: Gradient(colors: [.purple, .pink, .clear]), center: .bottomLeading, startRadius: 0, endRadius: 300)
                 .ignoresSafeArea()
             
-            Color.init(white: 1, opacity: 0.25)
+            Color.defaultBackground
+                .opacity(0.25)
                 .background(.ultraThinMaterial)
                 .ignoresSafeArea()
             
@@ -83,12 +83,14 @@ struct ContentView: View {
                 Text("Solat time!")
                     .font(.largeTitle)
                     .bold()
+                    .foregroundStyle(.primary)
                 
                 Spacer()
                 
                 VStack(alignment: .listRowSeparatorLeading, spacing: 20) {
                     Text("Today's Schedule")
                         .font(.largeTitle)
+                        .foregroundStyle(.tertiary)
                     
                     ForEach(times, id: \.name.description) { time in
                         HStack(spacing: 20) {
@@ -97,8 +99,10 @@ struct ContentView: View {
                                 .foregroundColor(.accentColor)
                             Text(time.name.description)
                                 .font(.headline)
+                                .foregroundStyle(.primary)
                             Text(time.time)
                                 .font(.headline)
+                                .foregroundStyle(.primary)
                         }
                     }
                 }

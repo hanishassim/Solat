@@ -12,6 +12,8 @@
 		CDF236A92A59B5D300168CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF236A82A59B5D300168CFC /* Assets.xcassets */; };
 		CDF236AD2A59B5D300168CFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF236AC2A59B5D300168CFC /* Preview Assets.xcassets */; };
 		CDF236B72A59B5D300168CFC /* SolatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF236B62A59B5D300168CFC /* SolatTests.swift */; };
+		CDF236D22A59D0BA00168CFC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF236D12A59D0BA00168CFC /* UIColor+Extensions.swift */; };
+		CDF236D42A59D0E800168CFC /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF236D32A59D0E800168CFC /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		CDF236AC2A59B5D300168CFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDF236B22A59B5D300168CFC /* SolatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF236B62A59B5D300168CFC /* SolatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolatTests.swift; sourceTree = "<group>"; };
+		CDF236D12A59D0BA00168CFC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		CDF236D32A59D0E800168CFC /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		CDF236A32A59B5D100168CFC /* Solat */ = {
 			isa = PBXGroup;
 			children = (
+				CDF236D02A59D0A400168CFC /* Extensions */,
 				CDF236A42A59B5D100168CFC /* SolatApp.swift */,
 				CDF236A62A59B5D100168CFC /* ContentView.swift */,
 				CDF236A82A59B5D300168CFC /* Assets.xcassets */,
@@ -97,6 +102,15 @@
 				CDF236B62A59B5D300168CFC /* SolatTests.swift */,
 			);
 			path = SolatTests;
+			sourceTree = "<group>";
+		};
+		CDF236D02A59D0A400168CFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDF236D12A59D0BA00168CFC /* UIColor+Extensions.swift */,
+				CDF236D32A59D0E800168CFC /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF236A72A59B5D100168CFC /* ContentView.swift in Sources */,
+				CDF236D22A59D0BA00168CFC /* UIColor+Extensions.swift in Sources */,
 				CDF236A52A59B5D100168CFC /* SolatApp.swift in Sources */,
+				CDF236D42A59D0E800168CFC /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
